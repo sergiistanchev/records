@@ -1,0 +1,310 @@
+/* this file contains ONLY work around styles to aid in development */
+/* at the end of development this file should be empty and removed */
+
+
+/* style for old style tabs that have an A inside the tab - the A is unnessessary - so we just try to clear the style */
+.uiTabs .uiTabs-list LI A {
+    color: inherit;
+    *color: #73746f;
+    background: transparent;
+    display: block;
+    text-decoration: none;
+}
+
+.uiTabs .uiTabs-list LI.disabled A {
+    *color: #dcdcdb;
+    cursor: auto;
+}
+
+/* style for legacy modal layer */
+div#modal{
+	opacity: .5;
+	filter: alpha(opacity=50);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 95;
+	background: #676767;
+}
+
+#main.mockPanel {
+    border: 1px solid #cecece;
+    margin-left: 10%;
+    padding: 10px 20px;
+    width: 800px;  
+}
+
+/* waiting on DateRangePicker.js to be refactored into a widget that uses DateField */
+.uiField INPUT.calendaricon, .uiField INPUT.calendaricon_dis {
+    float: right;
+    height: 17px;
+    margin: -1px -2px -1px 0;
+    border: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+}
+
+/*
+  TODO
+  * conditional subtoolbar appearance in toolbarwrapper in ManifestImport.jsp
+  * noprint in toolbar in CorrespondenceView.jsp
+*/
+
+/* various dialog panels. res: convert to standard message - but need to check each one */
+.panelmessage{
+	padding:15px 20px;
+	font-size:14px;
+	line-height: 1.2em;
+}
+.panelmessage li{
+	font-size:14px;
+}
+
+
+/* menuPanelUtils.js showFloatingMessagePanel. res: inline or standardise */
+.floatingMessagePanel{
+	background-color: #dfeefa;
+	padding: 5px;
+	position:absolute;
+	border: solid 1px #b9b9b7;
+	border-width: 0px 1px 1px 1px;
+	width: auto;
+}
+
+
+/* commentsField.tag */
+div.commentDisplay, div.commentDisplayDisabled {
+  background:url(/html/Images/icons/ic_commentsedit.gif) no-repeat 100%;
+  border:solid 1px #808080;
+  line-height:1.5em;
+  padding-right:2px;
+  padding-left:2px;
+  white-space:normal;
+  text-align:left;
+  overflow:hidden;
+}
+
+div.commentDisplay {
+  cursor:pointer;
+  background-color:white;
+}
+
+div.commentDisplayDisabled {
+  background-color: #cfcfcf;
+}
+
+
+div.commentTextArea {
+  display:none;
+  position:absolute;
+  z-index:1;
+}
+
+div.commentTextArea textarea {
+  padding:2px 2px;
+  background-color:white;
+  overflow:auto;
+}
+/* end commentsField.tag */
+
+/* FileSelector.tag */
+div.fileselector{
+	background:url(/html/Images/icons/ic_fileselect.gif) no-repeat 100%;
+	background-color:white;
+	border:solid 1px #808080;
+	line-height:1.5em;
+	padding-right:20px;
+	padding-left:2px;
+	width:180px;
+	white-space:normal;
+}
+div.fileselector input {
+	width:175px;border:none;
+}
+/* end FileSelector.tag */
+
+/* DateRangePicker.tag */
+.dp_container .trash {
+    cursor: pointer; margin-bottom: -2px; padding-left: 15px;
+}
+
+.dp_container tr td {
+    white-space: nowrap;
+}
+
+.dp_container tr td span,
+.drp_query, .drp_qualifier {
+    margin-left: 0px;
+}
+/* end DateRangePicker.tag */
+
+
+
+.orgname {
+    font-style: italic;
+    font-weight: normal;
+    color: #b9b9b7;
+    line-height: 10px;
+    padding: 2px 0px;
+}
+
+ul.searchList{
+	list-style: none;
+}
+ul.searchlist li input{
+	margin:0;
+	padding:0;
+}
+div.searchResultPanel {
+	padding: 2px;
+	margin: 5px 0px;
+	display:inline;
+}
+
+tr.hvrLight:hover{
+	background-color: #FFFFFF;
+}
+
+/* stacked forms supplier docs and workflows */
+DIV.compactForm { padding: 5px 10px 3px 10px; }
+DIV.compactForm .messagecell { color: black; font-weight: bold; padding: 2px 0 0; }
+DIV.compactForm INPUT.medium, DIV.compactForm SELECT.medium { width: 261px; margin: 2px 0px;}
+
+/* Menu.tag MenuItem.tag MenuSubMenu.tag. res: replace with uiMenu style in widgets.js */
+.menuDropDown { padding: 0; margin: 0; list-style: none; position: absolute; visibility: hidden; z-index:1000; }
+.menuDropDown LI { float: left; clear: left; position: relative; white-space: nowrap; }
+.menuDropDown { border: 2px solid #aaa; border-width: 0px 2px 2px 0px; background: white; }
+.menuDropDown LI { border: 1px solid black; background: white; margin-top: -1px; }
+.menuDropDown LI.cMenuSub .cMenuLabel { background: transparent url('/html/Images/icons/arr1.gif') no-repeat scroll right center; padding-right: 14px; }
+.menuDropDown LI A,
+.menuDropDown LI .cMenuLabel,
+.menuDropDown LI .cMenuDisabled { display: block; padding: 3px 6px; text-decoration: none; color: black; }
+.menuDropDown LI.over { background-color: #dfeefa; }
+.menuDropDown LI.over UL,
+.menuDropDown LI.over LI.over UL,
+.menuDropDown LI.over LI.over LI.over UL { visibility: visible; }
+.menuDropDown LI.over LI UL,
+.menuDropDown LI.over LI.over LI UL { visibility: hidden; }
+.menuDropDown .cMenuSub .menuDropDown { margin-top: -18px; }
+.menuDropDown LI DIV.cMenuDisabled { color: #888; background-color: white; }
+
+/* ******************************************************************
+	File Icon styles
+*/
+.ficon { cursor: pointer; width: 20px; height: 17px; background: transparent url('/html/Images/icon/icon_genericfile.gif') scroll no-repeat 1px 1px; }
+.ficon-hasmarkups { background-image: url('/html/Images/icons/icon-overlay_edit.gif'); background-position: 7px 3px; }
+
+input.editable{
+	width:100%;
+	height:100%;
+	border:solid 1px #ccc;
+	margin:0;
+	padding:0;
+}
+
+.bold {
+	font-weight: bolder;
+}
+
+
+/* ********************************************************************
+Addressing Fields
+********************************************************************** */
+.multimatch {
+	color: #333333;
+	background-color: #dfeefa!important;
+	padding: 3px 5px!important;
+}
+
+.predelete{
+	color: #333333;
+	background-color:#dfeefa!important;
+}
+
+.nomatch{
+	color: #333333;
+	background-color: #FFB7B7!important;
+	border: solid 1px #ffffff!important;
+	padding: 3px 5px !important;
+}
+
+.nomatch a{
+	font-weight:bolder;
+}
+
+
+/* *************************************************************
+	Footer content panel
+************************ */
+
+/* Animated throbber */
+.loading{
+	padding-left: 20px !important;
+	color: #0873bd !important;
+}
+
+.separator{
+	width:15px;
+	border-collapse:collapse;
+	height:150%;
+	display:inline;
+	border:0;
+	border-left:solid 1px #CCC;
+	margin: 0px 3px 0px 3px;
+}
+
+.neg{
+	color:red;
+}
+
+/******** Multi Result Lists */
+
+
+.resultListContainer, .resultListTable {
+    margin: 0px;
+    border: 1px solid #cbcbcb;
+    overflow-y: scroll;
+    background: white;
+}  /* TODO 10CSS possible widget_medium candiate? */
+
+.resultListContainer { height: 170px; }
+.resultListTable { height: 100px; width: 507px; overflow-x: auto; }
+.resultListTable .dataTable { border: 0; *width: 467px; }
+
+/* Progress Bar */
+.sliderWrapper { border: 1px solid black; margin: 2px; clear:both; height: 15px; }
+.slider { overflow:hidden; height:100%; float: left; }
+.InSlider { width: 100%; text-align: center;}
+.NotInSlider { float: left; }
+
+/* Loading Message */
+div.loadingMessage { padding: 20px; }
+
+/* assignee list */
+ul.assigneeList { list-style: none; margin:5px 0; padding-left:0; }
+.assigneeList .user, .assigneeList .guest, .assigneeList .org, .assigneeList .group {
+    padding: 0px 0px 0px 32px;
+    background: transparent no-repeat 0px 0px;
+
+}
+.assigneeList .guest { background-image: url(/html/Images/icons/ic_externaluser.gif); }
+.assigneeList .user { background-image: url(/html/Images/icons/ic_aconexuser.gif); }
+.assigneeList .org { background-image: url(/html/Images/icons/icon_organisation.gif); }
+.assigneeList .group { background-image: url(/html/Images/icons/ic_distributiongroup.gif); }
+
+
+.lookup .lookupField > button.uibutton { *margin-bottom: -2px; }
+
+.blueregtext { color:#333333; text-decoration:none }
+.pageheadercell { font-size: 1.143em; font-weight: bold; color: #333333; vertical-align: bottom; }
+.labelcell3 { background-color: #333333; line-height: 125%; color: #FFF; border-width: 0px; }
+.highlight { background-color: #FFFFFF; }
+
+/* old tenders only */
+.whitenav { font-weight: bold; color: #FFFFFF; text-decoration: none; }
+.refcell { background-color: #F2F3F7; line-height: 125%; color: #333333; text-align: right; border-width: 0px; }
+.editcell {background-color: #DADDE6; color: #333333; text-decoration: none; vertical-align: middle; border-width: 0px; }
+.labelcell1 {background-color: #F2F3F7; line-height: 125%; color: #333333; border-width: 0px;}
+.labelcell2 {background-color: #F2F3F7; line-height: 125%; color: #333333; border-width: 0px; vertical-align: top; font-weight: bold; }
+.weightcell {line-height: 125%; font-weight: bold; text-transform: lowercase; color: #333333; background-color: #E2E2E2; text-align: center; }

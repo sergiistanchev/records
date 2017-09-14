@@ -1,0 +1,506 @@
+A, .textlink {
+    text-decoration: none;
+    color: #2a80b9;
+    cursor: pointer;
+}
+
+A:hover, .textlink:hover {
+    text-decoration: underline;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    position: absolute;
+    left: -9999px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* over class can be used to indicate a mouse tracking activity */
+.over {
+}
+
+/* hilight class is used to indicate something is semi-selected state */
+.hilight {
+    background: #dfeefa;
+}
+
+/* hint class is applied to text for supplemental instructions */
+.hint {
+    color: gray;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* error class is applied to text showing inline error messages */
+.error {
+    color: red;
+    fontStyle: italic;
+    margin: 3px 0 1px 0;
+}
+
+/* disabled class is used when something is no able to be clicked / actioned */
+.disabled {
+    color: #999;
+    cursor: auto;
+}
+
+/* indicating date past due */
+.overdue {
+    color: #e86c16;
+}
+
+/* The next two rules force the element they are declared on to grow to enclose all floated children.
+     in IE we give layoutusing zoom, in other browsers we create a clearing child and the end of the element  */
+.clearFloats {
+    zoom: 1;
+}
+
+.clearFloats:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0px;
+}
+
+/* The flow left should be applied to block level containers to force enclosed elements into a left and right 'column'
+     typically the container would need clearFloats applied. */
+.flow-left {
+    float: left;
+    text-align: left;
+}
+
+.flow-right {
+    float: right;
+    text-align: right;
+}
+
+/**
+  * rules relating to the layout of pages and common page elements
+  */
+
+#page, .page {
+    padding-top: 50px;
+}
+
+#page.page-noToolbar, .page.page-noToolbar {
+    padding-top: 0px;
+}
+
+H2 {
+    margin: 1em 0 0.5em 0;
+}
+
+/* ========== HEADER ========= */
+
+#header, .page-header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+#header .toolbar, .page-header .toolbar {
+    padding: 10px 30px 9px 30px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#toolbar_left, .flow_left {
+    float: left;
+}
+
+#toolbar_right, .flow_right {
+    float: right;
+}
+
+#header .toolbar H1, .page-header .toolbar H1 {
+    padding-right: 20px;
+    display: inline-block;
+    font-size: 1.286em;
+    font-weight: normal;
+    color: #73746f;
+    vertical-align: bottom;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    *float: left;
+    *padding-top: 5px;
+}
+
+.toolbar-help {
+    display: none;
+}
+
+/* ========== MAIN ========= */
+
+#main, .page-main {
+    margin: 15px 20px 15px 20px;
+}
+
+/* ========== MESSAGES ========== */
+
+.message {
+    background: #ffffff;
+    color: #333333;
+    border: 2px solid #4a90e2;
+    padding: 8px 15px 8px 48px;
+    *padding-top: 14px;
+    background: #ffffff url('../images/message-icons.png') scroll no-repeat 0px -192px;
+    position: relative;
+}
+
+.warning,
+.formTable TD.warning {
+    border: 2px solid #d0021b;
+    background-position: -192px -3px;
+}
+
+.check,
+.formTable TD.check {
+    border: 2px solid #fe7d18;
+    background-position: -144px -51px;
+}
+
+.info,
+.formTable TD.info {
+    border: 2px solid #4a90e2;
+    background-position: -96px -98px;
+}
+
+.success,
+.formTable TD.success {
+    border: 2px solid #7ed321;
+    background-position: -47px -146px;
+}
+
+.tip,
+.formTable TD.tip {
+    border: 2px solid #4a90e2;
+    background-position: 1px -195px;
+}
+
+.note,
+.formTable TD.note {
+    border: 2px solid #fe7d18;
+    background-position: -144px -51px;
+}
+
+.message > DIV {
+    height: 28px;
+    display: table;
+}
+
+.message DIV {
+    *height: auto;
+    *min-height: 20px;
+}
+
+.message > DIV > DIV {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 600px;
+}
+
+#messagePanel .message, .messagePanel .message {
+    margin: 15px 20px;
+    border-radius: 8px;
+}
+
+.uiPanel-body .message {
+    border: none;
+}
+
+.message LI {
+    margin-left: 15px;
+}
+
+h2.message {
+    font-size: inherit;
+    font-weight: normal;
+    border-radius: 8px;
+}
+
+.message h2 {
+    margin-top: 0;
+}
+
+.message .close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../images/callout-close.png") no-repeat scroll 0 0 transparent;
+    background-size: 8px 8px;
+    margin: 4px 0;
+}
+
+/* Mini message panel style for form table cells */
+.formTable TD.message {
+    background-image: url('../images/message-icons-small.png');
+}
+
+.formTable TD.warning {
+    border: 2px solid #d0021b;
+    background-position: -78px 2px;
+}
+
+.formTable TD.check {
+    border: 2px solid #fe7d18;
+    background-position: -58px -18px;
+}
+
+.formTable TD.info {
+    border: 2px solid #4a90e2;
+    background-position: -38px -38px;
+}
+
+.formTable TD.success {
+    border: 2px solid #7ed321;
+    background-position: -18px -58px;
+}
+
+.formTable TD.tip {
+    border: 2px solid #4a90e2;
+    background-position: 2px -78px;
+}
+
+.formTable TD.note {
+    background-position: -58px -18px;
+}
+
+.uiPanel H2 {
+    margin: 5px 10px;
+}
+
+.uiPanel td.messagecell {
+    padding-left: 10px;
+}
+
+/* ========== TOOLBAR ========== */
+
+.toolbar {
+    background: #ececec;
+    padding: 2px 5px;
+    min-height: 28px;
+}
+
+.toolbar SELECT {
+    height: 23px;
+    *vertical-align: top;
+    *margin-top: 3px;
+}
+
+.moz .toolbar SELECT {
+    padding-top: 4px;
+}
+
+.formTable .toolbar TABLE {
+    width: 1%;
+}
+
+.formTable .toolbar TABLE TD {
+    padding: 0px;
+}
+
+.confidentialIcon {
+    font-weight: bold;
+    color: #e86c16;
+    font-style: italic;
+    font-size: 1.286em;
+    line-height: 77%;
+}
+
+.rvmf {
+    color: #e86c16;
+    margin-left: 5px;
+}
+
+.tight {
+    width: 1%;
+    white-space: nowrap;
+}
+
+/* ====== generate from acx.ut.buttonIcon ===== */
+.bicon {
+    height: 18px;
+    width: 24px;
+    background: transparent url(../sprites/button-icons.png) scroll no-repeat 0 0;
+}
+
+.disabled .bicon {
+    background-image: url(../sprites/button-icons-disabled.png);
+}
+
+.disabled .ic-none, .ic-none {
+    background: transparent;
+}
+
+.disabled .ic-loading, .ic-loading {
+    background-image: url("../images/loading.gif");
+    background-position: 3px 0px;
+}
+
+.ic-search {
+    background-position: 3px -1px;
+}
+
+.ic-calendar {
+    background-position: 3px -22px;
+}
+
+.ic-multiselect {
+    background-position: 3px -44px;
+}
+
+.ic-file {
+    background-position: 4px -65px;
+    background-color: #fff
+}
+
+/* ====== file type images ===== */
+.fileIcon,
+.fileIcon-disabled {
+    height: 16px;
+    width: 20px;
+    display: inline-block;
+    margin: -1px 0 -3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fileIcon img.icon-sprite,
+.fileIcon-disabled img.icon-sprite {
+    position: absolute;
+    left: 2px;
+}
+
+.fileIcon, .fileIconImg {
+    cursor: pointer;
+}
+
+.fileIcon-disabled {
+    cursor: default;
+}
+
+.ic-gen img.icon-sprite {
+    top: 0;
+}
+
+.ic-nofile img.icon-sprite {
+    top: -17px;
+}
+
+.ic-bmp img.icon-sprite {
+    top: -34px;
+}
+
+.ic-csv img.icon-sprite {
+    top: -51px;
+}
+
+.ic-doc img.icon-sprite {
+    top: -68px;
+}
+
+.ic-dwf img.icon-sprite {
+    top: -85px;
+}
+
+.ic-dwg img.icon-sprite {
+    top: -102px;
+}
+
+.ic-gif img.icon-sprite {
+    top: -119px;
+}
+
+.ic-htm img.icon-sprite {
+    top: -136px;
+}
+
+.ic-jpg img.icon-sprite {
+    top: -153px;
+}
+
+.ic-pdf img.icon-sprite {
+    top: -170px;
+}
+
+.ic-plt img.icon-sprite {
+    top: -187px;
+}
+
+.ic-ppt img.icon-sprite {
+    top: -204px;
+}
+
+.ic-tif img.icon-sprite {
+    top: -221px;
+}
+
+.ic-txt img.icon-sprite {
+    top: -238px;
+}
+
+.ic-xls img.icon-sprite {
+    top: -255px;
+}
+
+.ic-zip img.icon-sprite {
+    top: -272px;
+}
+
+.ic-frozen img.icon-sprite {
+    top: -289px;
+}
+
+.ic-hasmarkups img.icon-hasmarkups {
+    position: absolute;
+    left: 7px;
+    top: 3px;
+}
+
+.ic-none, .ic-nofile {
+    cursor: auto;
+}
+
+/* ====== mail icon images ===== */
+.mailIcon {
+    cursor: pointer;
+    height: 16px;
+    width: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mailIcon-disabled {
+    cursor: default;
+}
+
+.mailIcon img {
+    position: absolute;
+    left: -4px;
+    top: 2px;
+}
+
+.remove {
+    background: url('../images/cross-small.png') scroll no-repeat 0 0 transparent;
+    height: 16px;
+    width: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.warning-icon img {
+    padding-left: 3px;
+}

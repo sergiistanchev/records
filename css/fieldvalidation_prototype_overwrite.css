@@ -1,0 +1,88 @@
+html, body { overflow: auto !important; }
+.selectize-control:hover:after { display:none; }
+.formTable { border:none; background:#FFF; }
+.formTable.transparent { border:none; background:transparent; }
+.formTable.transparent TR:last-child TD, .formTable TR:last-child TH { border-bottom: none; }
+.formTable TR:last-child TD, .formTable TR:last-child TH { border-bottom: none; }
+.formTable .messagecell { text-align: right; padding-top:10px; display:none; }
+.formTable .messagecell LABEL { position:relative; }
+.formTable .messagecell .required { position:absolute; right:-10px; top:5px; }
+.formTable .field-label { padding:10px 0; }
+.formTable .field-label label { font-size:14px; color:/*#73746f*/#333; }
+.formTable .field-label small { color:#73746f; display:block; padding-top:3px; }
+
+fieldset { border:none; }
+fieldset > div { padding:0 0 5px; }
+fieldset input[type=radio] { display:inline-block; padding:0 5px; }
+fieldset label { display:inline-block !important; padding:3px 5px; }
+
+.medium .form-control {
+    display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc !important;
+    padding:1px 3px !important;
+    width:300px;
+}
+.inputGroup {
+    position: relative;
+    display: block;
+    border-collapse: separate;
+    border:none;
+    background:transparent;
+    padding:0;
+    overflow: hidden;
+    width:auto !important;
+}
+.inputGroup .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.inputGroup-addon:last-child {
+    border-left: 0;
+}
+.input-group-addon {
+    padding: 7px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #73746F;
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-left:0;
+    float:left;
+    display:block;
+    font-style: italic;
+}
+.inputGroup .form-control {
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+}
+.radio-group { overflow: hidden; display: inline-block; }
+.radio-group fieldset { overflow: hidden; float:left; }
+.radio-group .radio { float:left; padding: 5px 10px; background:#FFF; border:solid 1px #CCC; border-radius:3px; color:#73746f; }
+.radio-group .radio, .radio-group .radio input[type='radio'], .radio-group .radio label { cursor:pointer; user-select: none; }
+.radio-group .radio.checked { color:#333; background:#EFEFEF; }
+.radio-group .radio:first-child { border-radius:3px 0 0 3px; }
+.radio-group .radio:last-child { border-left:none; border-radius:0 3px 3px 0; }
+.radio-group .group-clear { padding:10px 0 0 10px; float:left; }
+.uiTextField-input, .uiTextField-input.uiNumber-input, .uiDateField-input { padding:6px !important; }
+.uiDateField.small { width:150px; }
+.uiDateField.small INPUT { width:120px; }
+.uiNumber .uiNumber-input { text-align: right; border-right-style:dotted !important; }
+.uiIconField .bicon { margin: 4px 0; }
+.invalid, .invalid textarea { background: #ffe1d4 !important; border: 1px solid #ea4b13; }
+.invalid .uiNumber-input { background: #ffe1d4 !important; border: 1px solid #ea4b13 !important; }
+.textarea.invalid, .uiNumber.invalid { border:none; background:transparent !important; }
+.errorMessage { color:#ea4b13; padding:5px 0 0; }
+.fieldMessage { color:#73746F; padding:5px 0; font-size: 12px; }
+.fieldMessage.error { color:#ea4b13; margin:0; }
+.helperMessage { color:#73746F; font-size:14px; padding:5px 0 0; }
+span.optional { color: #3a9e21; padding: 0 2px; }
+.isRequired, .isRequired INPUT { background: transparent; }
+

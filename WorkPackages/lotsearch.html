@@ -1,0 +1,83 @@
+<html><head>
+ <!-- Successfully logged in -->
+ <meta http-equiv="Expires" content="Mon, 21 Dec 2015   24:54:24 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <title>Aconex</title>
+    <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/page.css">
+<link rel="stylesheet" type="text/css" href="../css/forms.css">
+<link rel="stylesheet" type="text/css" href="../css/data.css">
+<link rel="stylesheet" type="text/css" href="../css/widgets.css">
+<link rel="stylesheet" type="text/css" href="../css/legacy.css">
+<link rel="stylesheet" type="text/css" href="../css/mainMenu.css">
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<link rel="stylesheet" type="text/css" href="../css/CorrespondenceSearch.css">
+<link rel="stylesheet" type="text/css" href="../css/package_prototype_overwrite.css">
+<link rel="stylesheet" type="text/css" href="../css/lots_prototype_overwrite.css">
+    <script src="../js/jquery.min.js"></script>
+<script src="../js/selectize.js"></script>
+
+<script src="../js/package_prototype_scripts.js"></script>
+<script src="../js/lots_prototype_scripts.js"></script>
+<link href="../css/fontawesome.css" rel="stylesheet" type="text/css"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body class="mail-search-page ng-scope ng-isolate-scope" style="overflow: auto;">
+<div class="navbar">
+	<div class="navbar-header">
+		<h1 class="navbar-brand ng-binding" ng-bind="('Mail.SuperSearchTitle' | i18n) + ' ' + (schema.title)">Search - Packages</h1>
+
+	</div>
+</div>
+<div id="page" class="packageRegisterPage">
+	<div class="packageRegisterPageContent packages">		
+		<div class="toolPanel searchToolPanel"><input type="text" ng-model="query" value="Construction Lot" class="searchable-filter ng-pristine ng-untouched ng-valid"></div>
+	</div>
+	<table id="resultTable" class="table">
+		<thead>
+			<tr>
+				<th class="ng-binding">Package Number</th>
+				<th class="ng-binding">Package Title</th>
+				<th class="ng-binding">Revision</th>
+				<th class="ng-binding">Status</th>
+				<th class="ng-binding">Package Type</th>
+				<th class="ng-binding">Package Owners</th>
+				<th class="ng-binding">Updates Available</th>
+			</tr>
+		</thead>
+		<tbody id="rowPerMailTableBody">
+
+		</tbody>
+	</table>
+</div>
+
+	<script src="../js/lots_searchresults.json" type="text/javascript"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-77115506-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	<script>
+		lotSearch();
+	</script>
+</body>
+</html>

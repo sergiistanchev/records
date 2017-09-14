@@ -1,0 +1,74 @@
+
+
+HTML {
+    color: #333333;
+    background: #ffffff;
+}
+
+BODY, DIV, DL, DT, DD, UL, OL, LI, H1, H2, H3, H4, H5, H6, PRE, CODE, FORM, FIELDSET, LEGEND, INPUT, BUTTON, TEXTAREA, P, BLOCKQUOTE, TH, TD {
+    margin: 0;
+    padding: 0;
+}
+
+BODY {
+    font-family:  helvetica, arial, clean, sans-serif;
+    font-size: 88%;
+}
+
+BODY.moz,
+.moz BODY {
+    font-family: arial, clean, sans-serif; /* ACX-28916 */
+}
+
+P { margin: 1em 0em; }
+
+TABLE {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size:inherit;
+}
+
+TD, TH {
+    vertical-align: top;
+}
+
+CAPTION, TH {
+    text-align: left;
+}
+
+IMG {
+    border: 0;
+}
+
+OL, UL {
+    list-style-type: none;
+}
+
+UL.list {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+OL.list {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+
+SELECT, INPUT, BUTTON, TEXTAREA, BUTTON {
+    font-size:101%;   /* causes font-size to be inheritied correctly */
+    font-family: inherit;
+    color: inherit;
+}
+
+H1, H2, H3, H4 {
+    font-size: 1.286em;
+}
+
+H1, H2 { font-weight: bold; }
+H3, h4 { font-weight: normal; }
+
+
+
+BUTTON.navBarButton {
+    float: left;
+}

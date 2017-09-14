@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>test</title>
+		<style type="text/css" media="screen">
+		
+		html {
+			font-family: -apple-system, BlinkMacSystemFont,
+				"Segoe UI", "Helvetica Neue", sans-serif;
+		}
+		
+		section {
+			height: 500px;
+		}
+		
+		li {
+			font-size: 12px;
+			list-style-type: none;
+			line-height: 1.8em;
+		}
+		
+		.styleguide-menu {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			background: rgba(255,255,255,0.95);
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+		}
+		
+		.styleguide-menu a {
+			padding: 3px 10px;
+			border-radius: 3px;
+			text-decoration: none;
+			color: #666;
+		}
+		
+		.styleguide-menu a:hover {
+			background: rgba(0,0,0,0.1);
+		}
+		
+		.active-item a {
+			color: #1684F6;
+		}
+		
+		</style>
+	</head>
+	<body id="test" onload="">
+		<h1>Heading 1</h1>
+		<section>
+			<h2>Sub heading 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section>
+			<h2>Sub heading 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section>
+			<h2>Sub heading 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		
+		
+		
+		<script type="text/javascript">
+		
+		function buildMenuContainer() {
+			var container = document.createElement('ul');
+			container.className = 'styleguide-menu';
+			return container;
+		}
+		
+		function getHeadings() {
+			return Array.from(document.getElementsByTagName('h2'));
+		}
+		
+		function buildMenuItemCollection() {
+			var collection = [];
+			getHeadings().forEach(function(item) {
+				item.id = item.textContent;
+				
+				var menuItem = document.createElement('li');
+				menuItem.innerHTML = `<a href="#${item.id}">${item.textContent}</a>`;
+				
+				collection.push({
+					'headingElement': item,
+					'label': item.textContent,
+					'menuItemElement': menuItem
+				});
+			});
+			return collection;
+		}
+		
+		function addMenuToPage(menu, items) {
+			items.forEach(function(item) {
+				menu.appendChild(item.menuItemElement);
+			});
+			document.body.appendChild(menu);
+		}
+		
+		var menu = buildMenuContainer();
+		var items = buildMenuItemCollection();
+		addMenuToPage(menu, items);
+		
+		var currentItem = "";
+		
+		function isElementAboveMiddle (el) {
+			return (el.getBoundingClientRect().top <= window.innerHeight/2);
+		}
+		
+		window.addEventListener('scroll', function(e) {
+			window.requestAnimationFrame(function() {
+				for(var i = items.length - 1; i >= 0; i--) {
+					var item = items[i];
+				
+					if(isElementAboveMiddle(item.headingElement)) {
+						if(currentItem != item && currentItem != "") {
+							currentItem.menuItemElement.classList.remove('active-item');
+						}
+						item.menuItemElement.classList.add('active-item');
+						currentItem = item;
+						break;
+					}
+				}
+			});
+		});
+		</script>
+	</body>
+</html>

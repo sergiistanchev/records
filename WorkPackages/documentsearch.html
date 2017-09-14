@@ -1,0 +1,844 @@
+<html><head>
+ <!-- Successfully logged in -->
+ <meta http-equiv="Expires" content="Mon, 21 Dec 2015   24:54:24 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>Aconex</title>
+    <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/page.css">
+<link rel="stylesheet" type="text/css" href="../css/forms.css">
+<link rel="stylesheet" type="text/css" href="../css/data.css">
+<link rel="stylesheet" type="text/css" href="../css/widgets.css">
+<link rel="stylesheet" type="text/css" href="../css/legacy.css">
+<link rel="stylesheet" type="text/css" href="../css/mainMenu.css">
+<link rel="stylesheet" type="text/css" href="../css/supersearch.css">
+<link rel="stylesheet" type="text/css" href="../css/package_prototype_overwrite.css">
+<link rel="stylesheet" type="text/css" href="../css/lots_prototype_overwrite.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/selectize.js"></script>
+<script src="../js/package_prototype_scripts.js"></script>
+<!--[if lte IE 7]>
+<script src="/rsrc/20151217.1824/en_AU_DOC/core/js/json2.js"></script>
+<![endif]-->
+
+<link href="../css/fontawesome.css" rel="stylesheet" type="text/css"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body marginwidth="0" marginheight="0" style="overflow:auto !important">
+<script>
+window.localeDateFormat = "%d/%m/%Y";
+</script>
+<ul id="selectAllMenu" class="menuDropDown">
+  <li id="">
+  <a href="#" onclick="selectResultsOnPage(); return false;" title="">Select All On This Page</a></li>
+<li id="selectAllMenuItem">
+  <a href="#" onclick="selectAllResults(true); return false;" title="">Select All Results</a></li>
+<li id="">
+  <a href="#" onclick="selectAllResults(false); return false;" title="">Clear All</a></li>
+</ul><iframe name="downloadFrame" type="hidden" width="0" height="0" border="0" style="display:none" src="../images/blank.gif"></iframe>
+
+<form accept-charset="UTF-8" id="form1" name="form1" method="POST" onsubmit="return validateForm(this)">
+	<input type="hidden" name="isDirty" value="false">
+	<input type="hidden" name="isReload" value="false"><input type="hidden" value="1879048400" name="PROJECT_ID">
+
+
+<div id="page" class="page-noToolbar">
+     <input type="hidden" name="SEARCH_ACTION" value="0">
+
+	 <input type="hidden" name="searchMode" value="0">
+     <input type="hidden" name="pageNo" value="1">
+
+     <input type="hidden" name="tab" value="0">
+
+     <input type="hidden" name="displayMode" value="popup">
+     <input type="hidden" name="sortDir" value="">
+     <input type="hidden" name="selectAllIds" value="false">
+     <input type="hidden" name="deselectAllIds" value="false">
+     <input type="hidden" name="selectPageIds" value="false">
+     <input type="hidden" name="attachMode" value="MAIL">
+     <input type="hidden" name="EDIT_ACTION" value="">
+     <input type="hidden" name="Correspondence_correspondenceTypeID" value="">
+     <input type="hidden" name="SELECT_ALL_FOR_AUTO_UPDATE" value="false">
+     <input type="hidden" name="COMMAND" value="">
+     <input type="hidden" name="savedSearchId" value="0">
+     <input type="hidden" name="savedSearchType" value="">
+     <input type="hidden" name="LIST_ACTION" value="">
+     <input type="hidden" name="SESSION_SAVE_SELECTED_TAB" value="0">
+     <input type="hidden" name="REGISTER_ACTION" value="">
+     <input type="hidden" name="SRC_PAGE" value="">
+     <input type="hidden" name="SESSION_SAVE_SELECTED_TAB" value="">
+     <input type="hidden" name="PRINT_ACTION" value="">
+     <input type="hidden" name="USE_SELECTED" value="false">
+     <input type="hidden" name="ACTION" value=""> <input type="hidden" name="ACTIVE_FOLDER_ID" value="">
+     <input type="hidden" name="ITEM_TYPE" value=""> <input type="hidden" name="RETURN_URL" value=""> <input type="hidden" name="ITEM_ID" value=""> <input type="hidden" name="BROWSER" value="">
+     <input type="hidden" name="VERSION" value="">
+     <input type="hidden" name="CORR_EDIT_SCREENMODEL_ID" value="null">
+     <input type="hidden" name="selectedDocumentId" id="selectedDocumentId">
+
+     <div id="main">
+		 <table class="formTable">
+	        <colgroup style="width: 140px">
+	        </colgroup><colgroup>
+	        </colgroup><colgroup style="width: 140px">
+	        </colgroup><colgroup>
+	        </colgroup>
+	        <tbody>
+				<tr>
+					<td colspan="4" class="searchMessagePanel">
+						<div id="querySummaryPanel" style="display:none">
+			   				<ul>
+								<li class="message tip"><div><div>
+								  The following fields are populated: <span id="querySummary"></span>
+								</div></div></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+		            <td class="contentcell" colspan="4" style="padding: 10px">
+	                    <div class="superSearchContainer">
+	                        <div class="superSearchInput" tabindex="0">
+	                            <input type="text" value="" id="searchQuery" name="searchQuery" class="large  superSearchInputField  " title="Enter your search query here" onchange=" " onfocus="" tabindex="0">
+							</div>
+						    <button type="button" id="btnSearch_page" class="uiButton" title="" onmouseover="" onmousedown="" onmouseout="" onclick="">
+						      	<div class="uiButton-content">
+						        	<div class="uiButton-label">Search</div>
+						      	</div>
+						    </button>
+						    <button type="button" id="btnClear_page" class="uiButton" title="Clear All" onmouseover="" onmousedown="" onmouseout="" onclick="">
+						      	<div class="uiButton-content">
+						        	<div class="uiButton-label">Clear All</div>
+						      	</div>
+						    </button>
+						</div>
+	                </td>
+				</tr>
+				<tr class="formFooter">
+					<td colspan="4">
+	                    <div id="documentsPage" class="searchFilters clearFloats">
+	                        <div class="flow-left">
+								<div class="searchFilter"><a><img id="toggleModeIcon" border="0" src="../images/ic_lrg_more.gif" width="20" height="20" alt="Show/Hide advanced search fields" title="Show/Hide advanced search fields"></a></div>
+	                            <div id="docCheckboxes" class="searchFilter">
+									<span id="regSpecificConfig">
+				   	        			<label><input type="checkbox" id="showDocHistory" name="showDocHistory" class="checkbox"> Show document history</label>
+									</span>
+									<span id="unregSpecificConfig" style="display:none">
+										<label for="showUploadedByMeOnly">	<input type="checkbox" id="showUploadedByMeOnly" name="showUploadedByMeOnly" class="checkbox" onclick="" onchange="" value="true"> Show my uploads only</label>
+									</span>
+								</div>
+	                            <div class="none searchFilterLeftAlign">
+	                                <label for="sortBy">Sort by	
+	                                	<select id="sortBy" name="sortBy" class=" ">
+											<option value="registered">Date Modified</option><option value="discipline">Discipline</option>
+											<option value="docno">Document No</option><option value="filetype">File</option>
+											<option value="lock">Lock</option><option value="revision">Revision</option>
+											<option value="revisiondate">Revision Date</option><option value="size">Size</option>
+											<option value="docstatus">Status</option><option value="doctype">Type</option>
+										</select>		
+									</label>
+									</div>
+									<div class="searchFilter">
+				                		<label for="docSearchScreenModel.CDocSearchQuery.pageSize" style="white-space:nowrap">Show
+				                			<select id="resultSize" name="resultSize" class=" " onchange="">
+												<option value="25" selected="">25</option>
+										        <option value="50">50</option>
+										        <option value="75">75</option>
+										        <option value="100">100</option>
+										    </select>
+										per page</label>
+									</div>								
+		                	    </div>
+							</div>
+	    			</td>
+	    		</tr>
+	        </tbody>
+	    </table>
+	</div>
+         <!--  end of searchConfig div -->
+	<div id="searchResultsWrapper" class="searchResults docSearchResults displayNone">
+		<div id="searchResultsContainer">
+			<div class="searchNav clearFloats">
+			    <div class="flow-left">
+			        <div id="numResults"><b>1&nbsp;-&nbsp;25</b>&nbsp;of&nbsp;<b>708</b> documents&nbsp;&nbsp;(<b><span id="selectedSummary">0</span></b> selected)</div>
+			    </div>
+				<div class="flow-right">
+					<div class="paging"><!--  //TODO: These controls should be amended to include "First" and "Last" page links.  -->
+						&lt;&lt;previous&nbsp;&nbsp;<a class="currentpage" href="">1</a>&nbsp;&nbsp;<a>2</a>&nbsp;&nbsp;<a>3</a>&nbsp;&nbsp;<a>4</a>&nbsp;&nbsp;<a>5</a>&nbsp;&nbsp;<a>6</a>&nbsp;&nbsp;<a>7</a>&nbsp;&nbsp;<a>8</a>&nbsp;&nbsp;<a>9</a>&nbsp;&nbsp;<a>10</a>&nbsp;&nbsp;<a>11</a>&nbsp;&nbsp;&nbsp;&nbsp;<a>next&gt;&gt;</a>&nbsp;
+    				</div>
+    			</div>
+			</div>
+			<input type="hidden" name="numTotal" id="totalResults" value="708">        
+			<input type="hidden" name="selectionsIdsInCacheSize" value="0">
+			<table class="dataTable" id="resultTable">
+				<thead>
+					<tr class="dataHeaders">
+						<th class="sortable tight" title="Click for Selection Options">
+							<div id="selectMenu" class="" onclick="">
+								<img name="TOGGLE_SELECT" src="../images/ic_selectall_menu.gif" width="28" height="17" border="0" onmouseover="this.src='../images/ic_selectall_menu_over.gif'" onmouseout="this.src='../images/ic_selectall_menu.gif'">
+     						</div>
+    					</th>
+                        <th class="sortable tight" onclick="">
+							<div class="">File</div>
+        				</th>
+                        <th class="sortable" onclick="">
+							<div class="sortDESC">Document No</div>
+	    				</th>
+                        <th>Title</th>
+                        <th class="sortable" onclick="">
+							<div class="">Revision</div>
+	    				</th>
+                        <th class="sortable" onclick="">
+				    		<div class="">Status</div>
+					    </th>
+                        <th class="sortable" onclick="">
+				    		<div class="">Discipline</div>
+					    </th>
+                        <th class="sortable" onclick="">
+				    		<div class="">Date Modified</div>
+					    </th>
+						<th class="sortable" onclick="">
+				    		<div class="">Revision Date</div>
+					    </th>
+                        <th class="sortable" onclick="">
+				    		<div class="">Type</div>
+					    </th>
+                        <th class="sortable tight" onclick="">
+				    		<div class="">Size</div>
+				    	</th>
+	                    <th class="sortable tight" onclick="">
+				    		<div class="">Lock</div>
+				    	</th>
+            		</tr>
+    			</thead>
+				<tbody>
+					<input type="hidden" name="totalDocsInPage" value="25">
+					<tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879065984,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072524'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="271341877549072524" onclick="">
+		 			        <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072524">
+						</td>
+                        <td> 
+							<!--  Registered Tab -->
+                                <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+        				</td>
+                        <td><div class="searchResults-cellWrap">05-034_A700-1</div></td>
+                        <td>Main Lobby and Reception</td>
+						<td>6</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>19/09/2010</td>
+						<td>Drawing</td>
+                        <td class="tight">410.5 KB</td>
+                        <td>
+							<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+            			</td>
+                    </tr>
+					<tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879123702,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'1879169514'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169514" onclick="">
+				 			<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+				 			<input type="hidden" class="is_shared" name="IS_SHARED" value="">
+				 			<input type="hidden" name="allIdsInPage" value="1879169514">
+    					</td>
+                        <td> 
+                    <!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_jpg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">345</div></td>
+                        <td>Doc234 v2</td>
+						<td>B</td>
+					   	<td>For Review</td>
+					   	<td>Administration</td>
+					   	<td>19/11/2013</td>
+					   	<td>06/09/2013</td>
+					   	<td>Drawing</td>
+					   	<td class="tight">636 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>               
+					<tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063534,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'1879169229'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169229" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879169229">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                           <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+						<td><div class="searchResults-cellWrap">581-AWD-031</div></td>
+                        <td>Lobby Floor Plan</td>
+						<td>F</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>05/09/2013</td>
+						<td>20/08/2010</td>
+						<td>Drawing</td>
+						<td class="tight">102.2 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+					<tr class="dataRow confidential" data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Victoria Student','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':false,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879073673,'isTransmitted':false,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879168991'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879168991" onclick="">
+							<span class="confidentialIcon" title="This document is confidential">!</span>
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+							<input type="hidden" class="is_shared" name="IS_SHARED" value="">
+							<input type="hidden" name="allIdsInPage" value="1879168991">
+    					</td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">581-AWD-098</div></td>
+                        <td>Lobby Floor Plan</td>
+						<td>B</td>
+						<td>Approved Subject to Comments</td>
+						<td>Interior Design</td>
+						<td>17/05/2013</td>
+						<td>24/10/2010</td>
+						<td>Drawing</td>
+						<td class="tight">3.3 MB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+					<tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':false,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':false,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':false,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':-1,'isTransmitted':false,'hasFile':false,'isCurrent':true,'locked':false,'canEditDoc':true,'documentId':'271341877549072513'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="271341877549072513" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072513">
+					    </td>
+                        <td> </td>
+                        <td><div class="searchResults-cellWrap">6584674646</div></td>
+                        <td>Level 2 Offices Plans</td>
+						<td>1</td>
+						<td>Approved</td>
+						<td>Architectural</td>
+						<td>08/01/2016</td>
+						<td>31/01/2016</td>
+						<td>Drawing</td>
+						<td class="tight"></td>
+	                    <td>
+                        	<img src="../Images/ic_unlock.gif" width="12" height="13" border="0" alt="Unlocked - click to Lock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063292,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'1879169515'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169515" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879169515">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1</div></td>
+                        <td>Master Layout</td>
+						<td>F.1</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>19/11/2013</td>
+						<td>14/06/2013</td>
+						<td>Drawing</td>
+						<td class="tight">1.5 MB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                   	</tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879123644,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879169271'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169271" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879169271">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_xls.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1000</div></td>
+                        <td>TITLE &amp; LEGEND SHEET</td>
+						<td>C</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>23/09/2013</td>
+						<td>12/07/2010</td>
+						<td>Drawing</td>
+					    <td class="tight">38 KB</td>
+	                    <td>
+	                        <img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063308,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'1879169516'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169516" onclick="">
+					 		<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879169516">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1000-DWG</div></td>
+                        <td>TITLE &amp; LEGEND SHEET</td>
+						<td>F.1</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>19/11/2013</td>
+						<td>17/08/2010</td>
+						<td>Drawing</td>
+						<td class="tight">117.5 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879123622,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879169272'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169272" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879169272">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_xls.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1001</div></td>
+                        <td>SITE PLAN</td>
+						<td>C</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>23/09/2013</td>
+						<td>09/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">6 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063348,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072522'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="271341877549072522" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+							<input type="hidden" class="is_shared" name="IS_SHARED" value="">
+							<input type="hidden" name="allIdsInPage" value="271341877549072522">
+						</td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1001-DWG</div></td>
+                        <td>SITE PLAN</td>
+						<td>F.1</td>
+						<td>For Review</td>
+						<td>Hydraulics</td>
+						<td>03/02/2016</td>
+						<td>08/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">99.4 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+					<tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061552,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099294'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879099294" onclick="">
+				 			<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+							<input type="hidden" class="is_shared" name="IS_SHARED" value="">
+							<input type="hidden" name="allIdsInPage" value="1879099294">
+						</td>
+                        <td> 
+		                    <!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1002</div></td>
+                        <td>STAGING PLAN</td>
+						<td>C</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>17/10/2010</td>
+						<td>10/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">63.7 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063325,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072520'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="271341877549072520" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+							<input type="hidden" class="is_shared" name="IS_SHARED" value="">
+							<input type="hidden" name="allIdsInPage" value="271341877549072520">
+						</td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1002-DWG</div></td>
+                        <td>STAGING PLAN</td>
+						<td>D</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>09/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">79.4 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                   	</tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061559,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099278'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879099278" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099278">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1003</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, LOBBY LOUNGE</td>
+						<td>C</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>19/10/2010</td>
+						<td>22/07/2010</td>
+						<td>Drawing</td>
+						<td class="tight">203.5 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                   	</tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061932,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099280'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879099280" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099280">
+    					</td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1004</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, MAIN LOBBY</td>
+						<td>F</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>17/10/2010</td>
+						<td>24/08/2010</td>
+						<td>Drawing</td>
+						<td class="tight">228.4 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879123695,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'1879169520'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879169520" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879169520">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_jpg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1004-DWG</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, MAIN LOBBY</td>
+						<td>F.1</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>20/11/2013</td>
+						<td>25/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">636 KB</td>
+						<td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061549,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099296'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879099296" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099296">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1005</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, PORTE COCHERE</td>
+						<td>C</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>16/10/2010</td>
+						<td>08/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">195 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063313,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072521'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="271341877549072521" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072521">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1005-DWG</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, PORTE COCHERE</td>
+						<td>D</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>07/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">77.4 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061535,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099298'}">
+						<td class="tight">
+							<input type="checkbox" name="selectedIdsInPage" value="1879099298" onclick="">
+			 			    <input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099298">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+						<td><div class="searchResults-cellWrap">A-1006</div></td>
+						<td>GENERAL ARRANGEMENT PLAN GROUND FL, BACK OF HOUSE</td>
+						<td>C</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>13/10/2010</td>
+						<td>29/07/2010</td>
+						<td>Drawing</td>
+						<td class="tight">158.6 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063327,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072523'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="271341877549072523" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072523">
+					    </td>
+						<td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1006-DWG </div></td>
+                        <td>GENERAL ARRANGEMENT PLAN GROUND FL, BACK OF HOUSE</td>
+						<td>F.1</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>29/08/2010</td>
+						<td>Drawing</td>
+						<td class="tight">104.4 KB</td>
+	                    <td>
+	                        <img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+	                	</td>
+                	</tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061529,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099288'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="1879099288" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099288">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1007</div></td>
+						<td>GENERAL ARRANGEMENT PLAN L1 CAFÉ</td>
+						<td>B</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>19/10/2010</td>
+						<td>18/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">63.7 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+					<tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063347,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072519'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="271341877549072519" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072519">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1007-DWG </div></td>
+                        <td>GENERAL ARRANGEMENT PLAN L1 CAFÉ</td>
+						<td>C</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>17/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">141.1 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061954,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099282'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="1879099282" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099282">
+					    </td>
+                        <td> 
+								<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"> </div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1008</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, HORIZON BAR SHT 1</td>
+						<td>D</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>19/10/2010</td>
+						<td>10/08/2010</td>
+						<td>Drawing</td>
+						<td class="tight">195 KB</td>
+						<td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063339,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072517'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="271341877549072517" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072517">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+							<div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1008-DWG</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, HORIZON BAR SHT 1</td>
+						<td>D</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>22/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">117.2 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                   	</tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Document Controller','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':true,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879061952,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':true,'canEditDoc':false,'documentId':'1879099284'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="1879099284" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="1879099284">
+					    </td>
+                        <td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_pdf.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1009</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, HORIZON BAR SHT 2</td>
+						<td>D</td>
+						<td>For Approval</td>
+						<td>Architectural</td>
+						<td>19/10/2010</td>
+						<td>10/08/2010</td>
+						<td>Drawing</td>
+						<td class="tight">228.4 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                    <tr class="dataRow " data-uimenu-props-json="{'hasAnyLocks':true,'lockingUser':'Patrick O\u0027Leary','canMarkupDoc':true,'lockedInSupplierDoc':false,'isCheckedOut':false,'lockedInWorkflow':true,'isSharedReadOnly':false,'projectId':1879048400,'isNoLongerInUse':false,'isViewerEnabled':true,'fileId':1879063346,'isTransmitted':true,'hasFile':true,'isCurrent':true,'locked':false,'canEditDoc':false,'documentId':'271341877549072518'}">
+						<td class="tight">
+					        <input type="checkbox" name="selectedIdsInPage" value="271341877549072518" onclick="">
+							<input type="hidden" class="has_file" name="HAS_FILE" value="yes">
+					        <input type="hidden" class="is_shared" name="IS_SHARED" value="">
+					        <input type="hidden" name="allIdsInPage" value="271341877549072518">
+					    </td>
+						<td> 
+							<!--  Registered Tab -->
+                            <div class="ficon" style="background-image: url('../Images/icon_dwg.gif'); margin: -2px 0;" onclick="" title="Open File"></div>
+            			</td>
+                        <td><div class="searchResults-cellWrap">A-1009-DWG</div></td>
+                        <td>GENERAL ARRANGEMENT PLAN, HORIZON BAR SHT 2</td>
+						<td>D</td>
+						<td>For Review</td>
+						<td>Architectural</td>
+						<td>03/02/2016</td>
+						<td>22/09/2010</td>
+						<td>Drawing</td>
+						<td class="tight">67.7 KB</td>
+	                    <td>
+                        	<img src="../Images/ic_lock.gif" width="12" height="13" border="0" alt="Locked - click to Unlock" style="margin: -2px 0;">
+                		</td>
+                    </tr>
+                </tbody>
+			</table>
+
+			<input type="hidden" name="numSelectedOnOtherPage" value="0">
+			<input type="hidden" name="total_checkbox" value="25">
+			
+			<div class="searchNav clearFloats">
+			    <div class="flow-right">
+			            <div class="paging"><!--  //TODO: These controls should be amended to include "First" and "Last" page links.  -->
+			         &lt;&lt;previous&nbsp;&nbsp;<a class="currentpage" href="">1</a>&nbsp;&nbsp;<a>2</a>&nbsp;&nbsp;<a>3</a>&nbsp;&nbsp;<a>4</a>&nbsp;&nbsp;<a>5</a>&nbsp;&nbsp;<a>6</a>&nbsp;&nbsp;<a>7</a>&nbsp;&nbsp;<a>8</a>&nbsp;&nbsp;<a href=";">9</a>&nbsp;&nbsp;<a>10</a>&nbsp;&nbsp;<a>11</a>&nbsp;&nbsp;&nbsp;&nbsp;<a>next&gt;&gt;</a>&nbsp;
+			    </div>    </div>
+			</div>
+		</div>
+	</div>
+		<!--  End of searchResults Wrapper Div -->
+	</div><!-- End main div -->
+</div><!-- End page div -->
+</form>
+</body>
+</html>

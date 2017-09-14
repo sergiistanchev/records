@@ -1,0 +1,396 @@
+/* ========== index page frame styles ========= */
+HTML, BODY {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#navContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#frameContainer {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#frameLoader, #frameMain {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#frameMain {
+    overflow: auto;
+    border: 0;
+}
+
+/* ========== acx.menu.Nav ========== */
+.nav-infoHolder {
+    height: 40px;
+    position: relative;
+    background-color: white;
+    z-index: 1012;
+    overflow: hidden;
+}
+
+.nav-extras {
+   float: right;
+   height: 40px;
+   *width: 300px;
+}
+
+.nav-xps {
+  *position: relative;
+  *top: 11px;
+  font-size: 1.143em;
+}
+
+.nav-xps .uiField {
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding-right: 0;
+}
+
+.moz .nav-xps .uiField INPUT {
+  padding-top: 5px;
+}
+
+.nav-xps .uiField .bicon {
+  float: left;
+  margin-top: 4px;
+  margin-right: -2px;
+  margin-left: 2px;
+  height: 16px;
+  background-image: url(../images/sprites.png);
+  background-position: -34px -87px;
+}
+
+.nav-xps .uiField INPUT {
+  padding: 3px 0 2px 2px;
+}
+
+.nav-xps .uiField .hint {
+    color: #b9b9b7;
+    font-weight: lighter;
+}
+
+.nav-help,
+.nav-logo,
+.nav-project,
+.nav-info {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 40px;
+  font-size: 1.143em;
+  line-height: 45px;
+  color: #73746f;
+}
+
+.nav-logo {
+    background: transparent url(../images/sprites.png) scroll no-repeat 0 -2px;
+    cursor: pointer;
+    width: 109px;
+    margin: 0 30px;
+}
+
+.nav-project {
+  border: 1px solid #dadada;
+  border-width: 0 1px;
+}
+
+.nav-project:hover {
+  background: #f7f7f7;
+}
+
+.nav-info > SPAN {
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.nav-logout {
+  margin-left: 8px;
+}
+
+.nav-orgDetails {
+  margin-left: 13px;
+}
+
+.nav-help {
+    color: #e86c16;
+    margin: 0 30px;
+}
+
+.nav-barRow {
+    background-color: #73746f;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    overflow: hidden;
+    position:relative;
+    z-index: 1006;
+}
+
+/* ========== acx.menu.NavBar ========== */
+
+.navBar {
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+
+.navBar-chevron {
+    position: absolute;
+    right: 10px;
+    height: 18px;
+    margin-top: 7px;
+    width: 18px;
+    background: transparent url(../images/sprites.png) scroll no-repeat 0 -71px;
+}
+
+.navBar-chevronUp {
+    background-position: 0 -89px;
+}
+
+/* ========== acx.menu.NavBarButton ========== */
+
+BUTTON.navBarButton {
+    margin: 0;
+}
+
+.navBarButton .uiButton-content {
+    background-color: transparent;
+    background-image: none;
+    font-size: 1.143em;
+    border: 0;
+    border-radius: 0;
+    padding: 11px 5px 11px 9px;
+    height: 26px;
+    min-width: 0;
+}
+
+.navBar BUTTON.over .uiButton-content,
+.navBar BUTTON.open .uiButton-content {
+    background-color: #454545;
+}
+
+.navBar BUTTON .uiButton-label {
+    background: transparent;
+}
+
+.navBar BUTTON.over .uiButton-label {
+    background: transparent url('../widgets/button/menu-button.gif') no-repeat right 2px;
+}
+
+
+.navBar BUTTON.active .uiButton-content {
+    background-color: #ececec;
+    color: #e86c16;
+    font-weight: normal;
+}
+
+.navBarButton .bicon {
+    padding-top: 1px;
+	height: 21px;
+	width: auto;
+}
+
+.navBarButton .uiButton-label {
+    padding-top: 0;
+    margin-left: 18px;
+    padding-left: 6px;
+}
+
+.ie10 .navBarButton .uiButton-label,
+.ie9 .navBarButton .uiButton-label {
+    padding-top: 0px;
+}
+
+/* ========== Module Icons ========== */
+
+.navBarButton .bicon{
+  background-image: url(../images/sprites.png);
+}
+
+.ic-PRINTSHOP,
+.ic-DOC { background-position: -95px -46px; }
+.regType-ASSET .ic-DOC { background-position: -95px -126px; }
+.regType-ITEM .ic-DOC { background-position: -95px -486px; }
+.regType-DEFECT .ic-DOC { background-position: -95px -526px; }
+.regType-ISSUE .ic-DOC { background-position: -95px -206px; }
+.regType-INTERFACE .ic-DOC { background-position: -95px -46px; }
+.ic-CORRESPONDENCE { background-position: -95px -86px; }
+.ic-WORKFLOW { background-position: -95px -166px; }
+.ic-CONTRACT { background-position: -95px -246px; }
+.ic-DIR { background-position: -95px -286px; }
+.ic-SETUP { background-position: -95px -326px; }
+.ic-TASK { background-position: -95px -365px; }
+.ic-SUPPLIERDOCS { background-position: -95px -406px; }
+.ic-TENDERS { background-position: -95px -446px; }
+.ic-BIM { background-position: -95px -566px; }
+.ic-REPORTING { background-position: -95px -607px; }
+.ic-FIELD { background-position: -95px -206px; }
+.ic-COST { background-position: -95px -246px; }
+
+/* ========== acx.menu.NavBarPanel ========== */
+.navBarPanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    background: #ffffff;
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.6);
+    font-size: 1.065em;
+    line-height: 133%;
+}
+
+.navBarPanel .navBarPanel-column {
+    padding: 10px;
+    float: left;
+}
+
+.navBarPanel .navBarPanel-menuSubSection {
+    margin-bottom: 20px;
+}
+
+.navBarPanel .navBarPanel-menuSubSection:last-child {
+    margin-bottom: 0;
+}
+
+.navBarPanel .navBarPanel-menuSubSectionTitle {
+    color: #73746f;
+    margin-bottom: 4px;
+    padding-right: 10px;
+    font-size: 1.2em;
+}
+
+.navBarPanel .navBarPanel-menuSubSectionSubTitle {
+    color: #73746f;
+    font-style: italic;
+    padding: 2px 10px 3px 0;
+}
+
+.navBarPanel .navBarPanel-menuItem,
+.navBarPanel .navBarPanel-menuSubSectionFooter {
+    color: #527897;
+    padding: 2px 10px 2px 7px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.navBarPanel .navBarPanel-menuSubSectionFooter .textlink {
+    font-style: italic;
+}
+
+.navBarPanel .navBarPanel-menuItem:hover {
+    background-color: #dfeefa;
+}
+
+/* ========== helpPanel ========== */
+
+.helpPanel {
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.helpPanel-item {
+    line-height: 150%;
+    padding: 6px 10px 12px 0;
+}
+
+.helpPanel-item .support-central-link {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+#orgAdminDetails {
+    padding-right: 0;
+}
+
+#orgAdminDetails-loading {
+    overflow: hidden;
+    padding: 6px 0 0 1px;
+}
+#orgAdminDetails-loading img {
+    margin: 0 5px 0 0;
+    float: left;
+}
+#orgAdminDetails-loading div {
+    float: left;
+}
+
+#orgAdminTableDiv {
+    display: none;
+}
+
+table.dataTable {
+    width: 410px;
+}
+
+/* ========= ProjectChanger ========= */
+
+.projectChanger-container {
+    cursor: pointer;
+    padding: 12px 20px 12px 20px;
+    *position: relative;
+    *top: 12px;
+}
+
+.projectChanger-container:hover {
+    background: #f7f7f7;
+}
+
+.projectChanger-arrow {
+    display: inline-block;
+    background: transparent url(../images/sprites.png) scroll no-repeat -56px -40px;
+    width: 21px;
+    height: 17px;
+    *position: relative;
+    *top: -3px;
+}
+
+.projectChanger-list {
+    background-color: #ffffff;
+    border: 1px solid #CECECE;
+    border-top: 0;
+    padding: 5px 15px;
+}
+
+.ie7 .projectChanger-overflow {
+    overflow-x: hidden;
+}
+.projectChanger-overflow {
+    height: 300px;
+    overflow: auto;
+}
+
+.projectChanger-overflow .projectChanger-listItem > DIV {
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.projectChanger-listItem {
+    padding: 5px 20px 5px 5px;
+    border-radius: 3px;
+    color: #73746f;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.143em;
+}
+
+.projectChanger-project .hint,
+.projectChanger-listItem .hint {
+    font-style: normal;
+    font-size: 0.75em;
+    color: #e86c16;
+}
+
+.projectChanger-listItem:hover {
+    background-color: #dfeefa;
+}

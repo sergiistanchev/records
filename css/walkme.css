@@ -1,0 +1,117 @@
+.walkme-custom-balloon-outer-div,
+.mt-custom-balloon-outer-div,
+.walkme-custom-popup {
+    border: 1px solid #ccc !important;
+    background: none repeat scroll 0% 0% #fff !important;
+    background-color: #fff !important;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8) !important;
+    border-radius: 2px 2px 2px 2px !important;
+}
+
+.walkme-custom-popup-welcome-step{
+    padding: 20px 20px 15px !important;
+}
+
+.walkme-custom-balloon-top-div,
+.mt-custom-balloon-top-div{
+}
+
+.walkme-custom-balloon-separator{
+    margin:   0!important;
+}
+
+.walkme-custom-balloon-bottom-div{
+    background-color: #ececec !important;
+}
+
+.walkme-custom-balloon-title ,
+.mt-custom-balloon-title,
+.walkme-custom-welcome-step-title {
+    margin-top:2px !important;
+    margin-right:10px !important;
+    font-size:1.5em !important;
+    color: #FE8628 !important;
+    font-weight: normal !important;
+}
+
+.walkme-custom-balloon-content ,
+.mt-custom-balloon-content  {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.walkme-custom-balloon-top-div-bottom ,
+.mt-custom-balloon-top-div-bottom  {
+}
+
+.walkme-custom-balloon-no-buttons-div {
+height: 10px
+}
+
+.walkme-custom-balloon-separator {
+}
+
+.walkme-custom-balloon-bottom-div  {
+}
+
+.walkme-custom-balloon-subtext ,
+.mt-custom-balloon-subtext  {
+}
+
+.walkme-custom-balloon-powered-by-div ,
+.mt-custom-balloon-powered-by-div  {
+}
+
+.walkme-custom-balloon-powered-by-link ,
+.mt-custom-balloon-powered-by-link  {
+}
+
+
+.walkme-custom-balloon-buttons-div{
+}
+
+.walkme-custom-balloon-close-button{
+    color: #527897 !important;
+}
+
+.walkme-custom-welcome-step-content {
+    font-size: 101% !important;
+}
+
+.walkme-custom-welcome-step-button,
+.walkme-custom-balloon-button {
+    border: none;
+    font-size: 101% !important;
+    border-radius: 3px !important;
+    font-weight: normal !important;
+    font-family: helvetica, arial, clean, sans-serif !important;
+    background: #527897 !important;
+}
+
+.walkme-custom-welcome-step-start-button,
+.mt-custom-welcome-step-start-button,
+.walkme-custom-first-step-not-available-ok-button,
+.walkme-custom-balloon-next-button,
+.walkme-custom-balloon-done-button {
+    background: #e86c16;
+ }
+
+.walkme-custom-balloon-arrow-outer-top {
+    border-top-color: #B8BEC2 !important;
+}
+
+.walkme-custom-balloon-arrow-inner-top {
+    border-top-color: #ececec !important;
+}
+
+.walkme-custom-balloon-arrow-outer-bottom {
+    border-bottom-color: #B8BEC2 !important;
+}
+
+.walkme-custom-balloon-arrow-outer-left {
+    border-left-color: #B8BEC2 !important;
+}
+
+.walkme-custom-balloon-arrow-outer-right {
+    border-right-color: #B8BEC2 !important;
+}

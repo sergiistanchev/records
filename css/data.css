@@ -1,0 +1,354 @@
+/**
+  * This file contains all rules relating to forms
+  * BROWSER TARGETTING
+  *   use the star-hack to target ie7
+  *   as a fall back, the classes defined on BODY [ .ie .ie7 .ie8 .moz .saf ] (use *hacks in preference)
+  *   selectors not supported by ie7 eg E:last-child are used for minor enhancements only
+  */
+
+/* ========== DATA TABLE LAYOUT ========== */
+
+.dataTable {
+    border: 1px solid #cccccc;
+    width: 100%;
+    background: #ffffff;
+}
+
+.dataTable TD,
+.dataTable TH {
+    padding: 8px 8px 6px 8px;
+}
+
+.dataTable TR.dataHeaders TH, DIV.datagrid DIV.grid-header TH {
+    vertical-align: middle;
+    background: #ececec;
+    font-size: 1.143em;
+}
+
+.dataTable TR.dataHeaders .sortable {
+    cursor: pointer;
+}
+
+.dataTable TR.dataHeaders .sortable:hover {
+    background-color: #e3e3e3;
+}
+
+ /* start ACX-29042 hack */
+:root .dataTable TR.dataHeaders .sortable:hover {
+    background-color: #ececec\9\0;
+    color: #527897\9\0;
+}
+
+_:-ms-input-placeholder, :root .dataTable TR.dataHeaders .sortable:hover {
+    color: #333333;
+    background-color: #e3e3e3;
+}
+ /* end ACX-29042 hack */
+
+.dataTable TR.dataHeaders .sortable > div {
+    background: transparent url('../images/dataTableSortAsc-white.png') scroll no-repeat center right;
+    padding-right: 18px;
+}
+
+.dataTable TR.dataHeaders .sortable:hover > div {
+    background: transparent url('../images/dataTableSortAsc.png') scroll no-repeat center right;
+}
+
+.dataTable TR.dataHeaders .sortable > div.sortASC {
+    background: transparent url('../images/dataTableSortAsc.png') scroll no-repeat center right;
+}
+
+.dataTable TR.dataHeaders .sortable > div.sortDESC {
+    background: transparent url('../images/dataTableSortDesc.png') scroll no-repeat center right;
+}
+
+.dataTable .dataHeaders TH {
+    border: 1px solid #cccccc;
+    border-width: 1px 0px;
+    font-weight: normal;
+}
+
+.dataTable TR.dataRow {
+    background-color: #ffffff;
+}
+
+.dataTable TR.dataRow TD,
+.dataTable TR.dataSubGroup TD {
+    border-bottom: 1px solid #dddddd;
+}
+
+.dataTable TR.dataRow:last-child TD {
+    border-bottom: 1px solid #ddd;
+}
+
+.dataTable TR.dataRow:hover {
+    background-color: #dfeefa;
+}
+
+.dataTable TR.active,
+.dataTable TR.active:hover {
+    background-color: #dfeefa;
+}
+
+.dataTable TR.grid-row-selected {
+    background-color: #dfeefa;
+}
+
+.dataTable TD INPUT[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    *position: static;
+    top: -1px;
+    margin: 0px 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    *height: 12px;
+    *overflow: visible;
+    *top: 1px;
+}
+
+.datagrid .dataTable TD INPUT[type=checkbox] {
+    *position: static;
+}
+
+.dataTable .dataGroup {
+    background-color: #f8f8f8;
+}
+
+.dataTable .dataGroup .dataGroupSubHeading,
+.dataTable .dataSubGroup .dataSubGroupSubHeading {
+    font-weight: bold;
+}
+
+.portletContent .dataTable .dataGroup{
+    background-color: #fff;
+}
+
+.dataTable .dataGroup TD {
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    height: 37px;
+    padding: 0px 10px;
+}
+
+.dataTable .dataGroup TD BUTTON:first-child {
+    margin-left: 0px;
+}
+
+.dataTable .dataGroup TD .flow-right BUTTON:last-child {
+    margin-right: 0px;
+}
+
+.dataTable .dataGroup .uiButton {
+    *vertical-align: middle;
+}
+
+.portletContent .dataTable .dataGroup TD{
+    vertical-align: middle;
+    height: 28px;
+    font-weight: bold;
+    padding: 0px 3px;
+}
+
+
+.dataTable .dataTable-spawnedList {
+	position:absolute;
+	display:none;
+	width: 150px;
+    border: 1px solid #ccc;
+    border-top-width: 0px;
+    padding: 5px;
+	line-height:1.2;
+    background-color:#dfeefa;
+}
+
+/* ========== DATA TABLE EMBELISHMENTS ========== */
+.indented.dataTable .dataGroup,
+.indented.dataTable .dataSubGroup {
+    font-weight: bold;
+}
+.indented.dataTable TR.dataSubGroup TD {
+    padding-left: 15px;
+}
+.indented.dataTable TR.dataRow TD:first-child,
+.indented.dataTable TR.dataRow TD.firstCell {
+    padding-left: 30px;
+}
+.dataTable .dataHeaders TH .selectAllMenu {
+    background: transparent url('../images/dataTableSelectAllMenu.png') scroll no-repeat 0 0;
+    height: 17px;
+    width: 28px;
+    margin-bottom: -2px;
+}
+
+.dataTable .dataHeaders TH .selectAllMenu:hover {
+    background-position: 0 -18px;
+}
+
+.dataTable .dataOptionsIndicator {
+    background-repeat: no-repeat;
+    background-position: right 10px;
+    background-image: url(../images/dataOptionsIndicator.png);
+    padding-right: 14px;
+}
+
+.confidential { font-style: italic; }
+
+
+/* ========== SEARCH RESULTS LAYOUT ========== */
+.searchResults {
+    border: 1px solid #cccccc;
+}
+
+.searchResults .dataTable {
+    border: 0;
+}
+
+.searchResults .dataTable .dataHeaders TH:last-child {
+    border-right: 0;
+}
+
+.searchResults .searchNav {
+    background: #ececec;
+    padding: 2px 10px;
+}
+
+.searchResults .searchNav .currentpage {
+    background-color: #FFFFFF;
+}
+
+.dataNoResults, TD.dataNoResults{
+    padding: 20px;
+    font-style: italic;
+    color: #b9b9b7;
+}
+
+DIV.dataNoResults{
+    border: solid 1px #cbcbcb;
+    background-color: #fff;
+}
+
+.searchResults DIV.dataNoResults{
+    border: 0;
+}
+
+DIV.searchResults-cellWrap { overflow: hidden; word-wrap: break-word; max-width: 36em;}
+
+/* ========== DATA GRID LAYOUT ========== */
+DIV.datagrid TABLE.dataTable {
+    border-top: 0;
+}
+
+div.datagrid .noHeaderRow table.dataTable tr.dataGroup td.grid-group-head-cell {
+    border-top: 1px solid #ccc;
+}
+
+DIV.datagrid TABLE.dataTable TR.dataGroup TD {
+    border: 0 none;
+    *background-color: #f8f8f8;
+}
+
+DIV.datagrid TABLE.dataTable TR.dataGroup TD.toggleGroup {
+    background: transparent url(../images/expandoTriangles.gif) no-repeat scroll -60px -16px ;
+    padding-left: 22px;
+    cursor: pointer;
+}
+
+DIV.datagrid TABLE.dataTable TR.dataGroup TD.grid-group-head-cell .message {
+    margin-bottom: 10px;
+}
+
+DIV.datagrid TABLE.dataTable TR.dataGroup TD.collapsed {
+    background-position: -77px 8px ;
+}
+
+DIV.datagrid TABLE.dataTable THEAD.grid-emptyGroup TR.dataGroup TD {
+    background-position: 4px -131px;
+    color: #b9b9b7;
+    cursor: auto;
+}
+
+DIV.datagrid TABLE.dataTable .dataHeaders TH {
+    border: 1px solid #cccccc;
+    font-weight: normal;
+}
+
+DIV.grid-body TABLE.dataTable TFOOT.headerColBodySync TH {
+    border-top: 0 none;
+    border-bottom: 0 none;
+}
+
+DIV.grid-body TABLE.dataTable TBODY:last-of-type TR.dataRow:last-child TD {
+    border-bottom: 0;
+}
+
+DIV.datagrid .rowdelete, DIV.datagrid .rowdelete-disabled {
+    width: 11px;
+    height: 14px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+DIV.datagrid .grid-row-selectable .dataRow {
+    cursor: pointer;
+}
+
+DIV.datagrid .rowdelete {
+    background: transparent url('../images/cross-small.png') scroll no-repeat -2px 0;
+}
+
+/* .rowdelete-disabled class puts old trash can image in place of new x image */
+DIV.datagrid .rowdelete-disabled {
+    background: transparent url('../images/trash_light.gif') scroll no-repeat 0 0;
+}
+
+DIV.datagrid .contextMenuIcon {
+    background: url('../images/contextmenu.gif') no-repeat 0 3px;
+    padding-left: 15px;
+}
+
+DIV.datagrid TR.dataRow-readOnly DIV.invalid {
+    border: 1px solid #EA4B13;
+    background-color: #FFE1D4;
+    margin: -2px 0;
+    padding: 1px 3px 4px;
+}
+
+DIV.datagrid TR.dataRow-readOnly DIV.edited {
+    border: 1px solid #54627A;
+    background-color: transparent;
+    min-height: 16px;
+    padding: 1px 5px 0 0;
+    margin: -2px 0;
+}
+
+DIV.datagrid TR.invalid TD {
+    background-color: #ffe1d4;
+}
+
+@media screen {
+    DIV.datagrid-printable DIV.grid-body THEAD {
+        display: none;
+    }
+}
+
+/* ========== DATA TABLE inside FORM TABLE ========== */
+DIV.formTable { border: 0; }
+DIV.formTable TR:last-child TD { border-bottom: 0; }
+DIV.formHeader { border: 1px solid #ccc; }
+DIV.formTable .dataTable,
+DIV.formTable TABLE.dataTable .dataHeaders TH { border-top-width: 0 }
+
+/* ========== TASK PORTLET DATA GRID LAYOUT ========== */
+
+div.grid-cellWrap { overflow: hidden; word-wrap: break-word; }
+div.grid-cellHideOverflow { overflow: hidden; }
+
+.transmitted{
+    background: url('/html/Images/icons/ic_tick.png');
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}

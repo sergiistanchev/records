@@ -1,0 +1,399 @@
+/**
+  * This file contains all rules relating to forms
+  * BROWSER TARGETTING
+  *   use the star-hack to target ie7
+  *   as a fall back, the classes defined on BODY [ .ie .ie7 .ie8 .moz .saf ] (use *hacks in preference)
+  *   selectors not supported by ie7 eg E:last-child are used for minor enhancements only
+  */
+
+.required {
+    color: #d0021b;
+    padding: 0 2px;
+    font-size: 1.5em;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+/* ========== FORM TABLE LAYOUT ========== */
+
+.formTable {
+    border: 1px solid #cccccc;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.formTable TD,
+.formTable TH {
+    padding: 5px 5px 5px 15px;
+}
+
+.formTable TR:last-child TD,
+.formTable TR:last-child TH {
+    border-bottom: 1px solid #cccccc;
+}
+
+.formTable .messagecell {
+    width: 140px;
+    padding-top: 6px;
+}
+
+.formTable LABEL {
+    display: block;
+}
+
+.formTable .messagecell LABEL {
+    display: inline;
+}
+
+.formTable .contentcell LABEL {
+    display: inline;
+}
+
+DIV.formFooter,
+.formTable .formFooter TD,
+.dataTable .formFooter TD {
+    border-top: 1px solid #cccccc;
+}
+
+/* This line is to ensure the Super Search label cell will not expand when collapsing the search filter to simple mode */
+.formTable .formFooter TD {
+    width: 0px;
+}
+
+/* Mini message panel style for form table cells */
+.formTable TD.message {
+    padding: 5px 27px;
+}
+
+/* ========== SECTION HEADERS ========== */
+DIV.formHeader,
+.formTable .formHeader,
+.dataTable .formHeader {
+    background-color: #ececec;
+    font-weight: bold;
+}
+
+DIV.formHeader,
+.formTable .formHeader TD,
+.dataTable .formHeader TD {
+    padding: 8px 5px 8px 15px;
+}
+
+/* ========== SEARCH FORMS ========== */
+
+.formTable .searchMessagePanel {
+    padding: 0;
+}
+
+.form .searchMessagePanel .message {
+    border: none;
+    background-color: transparent;
+    margin: 0.5em;
+}
+
+.formTable .searchFilters .searchFilter {
+    white-space: nowrap;
+    padding: 0px 10px 0 11px;
+    display: inline-block;
+    *float: left;
+}
+
+.formTable .searchFilters .searchFilter:first-child {
+    padding-left: 0;
+}
+
+.formTable .searchFilters .searchFilter:last-child {
+    border-right: 0;
+}
+
+.formTable .searchFilters .searchFilter #toggleModeIcon,
+.formTable .searchFilters .searchFilter LABEL {
+    margin-top: 2px;
+    padding-bottom: 1px;
+    line-height: 19px;
+}
+
+.formTable .searchFilters .searchFilter LABEL {
+    display: inline-block;
+}
+
+.formTable .searchFilters .searchFilter.searchFilterLeftAlign {
+    margin-left: -21px;
+}
+
+.formTable .searchFilters #docCheckboxes label {
+    margin-right: 21px;
+}
+
+.formTable .searchFilters .searchFilter #toggleModeIcon {
+    margin: 6px -10px -6px 1px
+}
+
+.searchFilters .searchButtons {
+    padding: 2px 5px;
+}
+
+/* ========== FORM LOCATIONS ========== */
+
+.uiPanel-body .uiPanel-body-message,
+.uiPanel-body .messagePanel {
+    padding: 15px 10px;
+}
+
+.uiPanel-body .uiPanel-body-message {
+    padding: 15px 10px;
+    font-size: 1.286em;
+}
+
+.uiPanel-body > .formTable,
+.uiPanel-body > .formTable TR:last-child {
+    border: 0;
+}
+
+/* ========== FORM GENERICS ========== */
+
+.formTable .hint {
+    color: #969793;
+}
+
+.formTable ul.assigneeList {
+    margin: 0;
+}
+
+/* ========== FORM ELEMENTS ========== */
+
+INPUT, SELECT, TEXTAREA, .uiField {
+    border: 1px solid #cccccc;
+    padding: 1px 3px;
+    background: white;
+}
+
+INPUT, SELECT, TEXTAREA {
+    *margin: -1px 0px;
+}
+
+INPUT[type=checkbox],
+INPUT[type=radio] {
+    background: transparent;
+    border: 0;
+}
+
+LABEL INPUT[type=radio],
+LABEL INPUT[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+.moz LABEL INPUT[type=radio],
+.moz LABEL INPUT[type=checkbox] {
+    margin-left: 1px;
+}
+
+/* form element widths */
+.mini {
+    width: 30px;
+}
+
+.small {
+    width: 100px;
+}
+
+.medium {
+    width: 300px;
+}
+
+.large, TEXTAREA.small, TEXTAREA.medium, TEXTAREA.large {
+    max-width: 600px;
+    width: 98.25%;
+}
+
+SELECT {
+    padding: 0;
+    *text-indent: -1px;
+}
+
+.saf SELECT {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+SELECT.mini {
+    width: 38px;
+}
+
+SELECT.small {
+    width: 108px;
+}
+
+SELECT.medium {
+    width: 308px;
+}
+
+SELECT.large {
+    *width: 608px;
+    max-width: 608px;
+}
+
+.ie8 SELECT.large {
+    max-width: 606px;
+}
+
+TEXTAREA.mini {
+    height: 4em;
+    width: 300px;
+}
+
+TEXTAREA.small {
+    height: 7em;
+}
+
+TEXTAREA.medium {
+    height: 14em;
+}
+
+TEXTAREA.large {
+    height: 22em;
+}
+
+/* generic 'imitation' fields rules */
+.uiField {
+    display: inline-block;
+}
+
+.uiField {
+    /* do not combine with style above - trip-switch hack used to force hasLayout */
+    *display: inline;
+    *padding-bottom: 0px;
+    *vertical-align: text-bottom;
+    *min-height: 16px;
+}
+
+.moz .uiField {
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.uiField INPUT {
+    border: 0;
+    padding: 0;
+}
+
+.moz .uiField INPUT {
+    margin-left: -1px;
+}
+
+.mini INPUT {
+    width: 30px;
+}
+
+.small INPUT {
+    width: 100px;
+}
+
+.medium INPUT {
+    width: 300px;
+}
+
+.large INPUT {
+    width: 99.8%;
+}
+
+.uiIconField.small INPUT {
+    width: 79px;
+}
+
+.uiIconField.medium INPUT {
+    width: 279px;
+}
+
+.uiIconField.large INPUT {
+    width: 94.1%;
+    margin-right: -4px;
+}
+
+.uiIconField .bicon {
+    float: right;
+    margin: -1px -5px -1px 0;
+    height: 17px;
+}
+
+.moz .uiIconField .bicon {
+    margin-right: -4px;
+}
+
+/* TextField - showFullContextPopup */
+.contextPopup {
+    position: absolute;
+    border: 1px solid #cccccc;
+    background-color: white;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 5px 3px;
+    margin-left: -5px;
+    margin-top: 17px;
+    *margin-left: -4px;
+    *margin-top: 16px;
+    *white-space: normal;
+}
+
+/* form element states */
+
+.isRequired,
+.isRequired INPUT {
+    background-color: #feffdb;
+}
+
+.validating .uiTextField-input {
+    background-repeat: no-repeat;
+    background-position: right 1px;
+    background-image: url(/html/Images/backgrounds/loading.gif);
+}
+
+.edited,
+.edited INPUT {
+    border-color: #333333;
+}
+
+.invalid,
+.invalid INPUT {
+    background-color: #ffe1d4;
+    border-color: #ea4b13;
+}
+
+.disabled,
+.disabled INPUT {
+    background-color: #dcdcdb;
+    border-color: #cccccc;
+    color: #999999;
+}
+
+/* formTable contents */
+.formTable TD.container {
+    padding: 0;
+}
+
+.formTable TABLE {
+    width: 100%;
+}
+
+/* This rule applys to tables inside form tables with the exception of grids */
+.formTable TD TABLE, .formTable TD TABLE TD {
+    border-style: hidden;
+    *border-style: none;
+}
+
+/* TODO 10CSS readonly state need more work */
+INPUT[readonly], TEXTAREA[readonly] {
+    border: 0;
+}
+
+/* Single column form layout - currently only applied to cascading projects in upload new document page */
+
+TABLE.formTable TD.messagecell.singleColumnLabelCell, TABLE.formTable TD.contentcell.singleColumnFieldCell {
+    padding: 4px;
+}
+
+.hasPlaceholder {
+    color: #888;
+}

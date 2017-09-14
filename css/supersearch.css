@@ -1,0 +1,61 @@
+.superSearchContainer {
+    padding-left: 5px;
+}
+
+.superSearchContainer *:focus {
+    outline: 0 none;
+}
+
+.superSearchContainer .superSearchInput {
+    border: 1px solid #cccccc;
+    border-right: none;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    display: inline-block;
+}
+
+.superSearchContainer .superSearchInputFocused {
+    border-color: #67aeee;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(103, 174, 238, 0.6);
+}
+
+.superSearchInput .superSearchInputField {
+    height: 26px;
+    width: 650px;
+    max-width: 650px;
+    font-size: 1.3em;
+    border: none;
+}
+
+.superSearchContainer #btnClear_page .uiButton-content {
+    background: transparent;
+    padding: 0;
+    color: #2a80b9;
+    min-width: 55px;
+}
+
+.superSearchContainer #btnClear_page .uiButton-content .uiButton-label {
+    padding: 0 0 0 5px;
+}
+
+.superSearchContainer #btnSearch_page {
+    margin: 0 0 0 -4px;
+    vertical-align: top;
+}
+
+.superSearchContainer #btnSearch_page .uiButton-content {
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.superSearchContainer #btnSearch_page .uiButton-label {
+    padding: 6px 10px;
+}
+
+.superSearchContainer .searchContentCheckbox {
+    display: inline-block;
+    height: 14px;
+    padding: 6px 0 6px 10px;
+    margin-left: -5px;
+}
